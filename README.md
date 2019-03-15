@@ -1,5 +1,6 @@
 # 42sleeptimer
-## For *42born2code* only, hey. Fires a terminal shell timer, which sleeps the Mac and pings you (with IFTTT or mail) before you lose your spot.
+## Useful really for *42born2code* only, hey. 
+## Fires a terminal shell timer, which sleeps the Mac and pings you (with IFTTT or mail) before you lose your spot.
 
 ### Problem: 
 Sessions on a Mac at 42 accept a stand-by time of 42 minutes before one gets automatically disconnnected. 
