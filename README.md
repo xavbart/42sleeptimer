@@ -39,13 +39,13 @@ You can either run it as a `.command` file by clicking it, or as a `.sh` shell s
 * It first sends you an initial ping or mail, so that you feel confident it is working, 
 * It will count down from 3 so that you may stop it in case you started it by mistake,
 * Then it sets the Mac to sleep using `pmset displaysleepnow`, the terminal equivalent to  your beloved `ctrl`+`shift`+`eject`. 
-* It will afterwards, while the screen is locked, starts couting and sends a reminder after 10 mins, 20 mins, 35 mins and, finally, THREE minutes before the end of the 42 minute period.
+* It will afterwards, while the screen is locked, starts counting and sends a reminder after 10 mins, 20 mins, 35 mins and, finally, THREE minutes before the end of the 42 minute period.
 
 ## OK, I want it, what do I do?
 
 ### Installing and running
 
-Download the files. **Or, better, clone it, branch it, improve it and do a PL to give back!**
+Download the files. **Or, better, clone it, branch it, improve it and submit a Pull Request to give back!**
 
 Drop the **sleeptimer.sh** file in your `~/bin` folder, `chmod 755` the script so that you can run it directly. 
 
