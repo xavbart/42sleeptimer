@@ -28,10 +28,10 @@
 # Settings
 #########################
 # If you want to use mail
-USE_MAIL=false
+USE_MAIL=true
 
 # If you want to use IFTTT to send notifs
-USE_IFTTT=true
+USE_IFTTT=false
 
 # replace the below key by your IFTTT webhook key as in webhooks / settings
 MYKEY="ENTER_YOUR_IFTTT_WEBHOOK_KEY" 
