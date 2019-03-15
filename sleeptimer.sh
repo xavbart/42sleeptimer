@@ -17,7 +17,7 @@
 #
 #
 # add this file to for instance your ~/bin folder 
-# (if you're not adding your ~?bin to your shell env, 
+# (if you're not adding your ~/bin to your shell env, 
 # add "export PATH=$PATH:$HOME/bin" to your .zshrc)
 # chmod 755 the file so that it runs on click.
 #
@@ -33,11 +33,10 @@ MAIL_CMD="mail -s 'Reste 7 minutes' "+$LOGNAME"@student.42.fr"
 # this is the name of the event you have created on IFTTT webhooks
 USEIFTTT=true
 # replace the below key by your IFTTT webhook key as in webhooks / settings
-MYKEY="cK6X9eEsfuJ0giLvQRD6YP" 
+MYKEY="ENTER_YOUR_IFTT_WEBHOOK_KEY" 
 # you need to have created a webhook applet with adequate title and body value
+# here value1 and value2
 MYEVENT="notif_iphone" # name of your event
-IFTTITLE="value1" # name of first varaible (title usually)
-IFTBODY="value2" #name of second variable
 clear
 date
 echo "\nIn 35 minutes I shall ping you."
