@@ -13,7 +13,12 @@ No work lost obviously (you commit, right ? *Right ?*), but, fair is fair, someo
 ### Solution:
 A gentle reminder that tells you that time flies and pings you every so often to tell you how much time remains, then alerts you when it is time to come back and get back to work.
 
-This is not preventing the disconnect, mind you. It is *really* the equivalent to starting a alarm or a timer on your phone. But if you use it, it put your Mac to sleep and the timer starts. 
+It pings you in two ways: 
+
+* by ***mail*** (set your 42 email address as VIP to get notifications on your phone's home screen) 
+* or via ***[IFTTT](https://ifttt.com)***, which should display notifications on your phone if you have installed the **IFTTT app** : [Google Play link](https://play.google.com/store/apps/details?id=com.ifttt.ifttt&hl=fr) / [Apple App Store link](https://itunes.apple.com/fr/app/ifttt/id660944635))
+
+This is not preventing the disconnect, mind you. It is *really* the equivalent to starting a alarm or a timer on your phone. But when you use it, it put your Mac to sleep AND the timer starts. 
 
 **So one command to run and you're good to go for coffee.**
 
@@ -46,22 +51,38 @@ Drop the **sleeptimer.sh** file in your `~/bin` folder, `chmod 755` the script s
 
 *You may want to add this `~/bin` folder to your shell ENV: do so by adding "`export PATH=$PATH:$HOME/bin`" to your `.[|z|k|c]shrc` file.*
 
-If you want to run it as a command (like, something you may double-click, as a app, with the thingie they call a mouse, for the GUI-inclined), you can use the **sleeptimer.command** file : it will open terminal and actually execute the `~/bin/sleeptimer.sh` shell script. This can be put, for instance, in your dock. Rename it as will. (Make sure it is also `chmod 755` so that it runs on opening.)
+*Restart terminal so the new scripts gets parsed, or type `reset` (it reloads the .rc file). Then you may
+run it by typing 'sleeptimer.sh' at anytime in your terminal*
+
+If you want to run it as a command (like, something you may double-click, as a app, with the thingie they call a mouse, for the GUI-inclined), you can use the **sleeptimer.command** file : 
+
+it will open terminal and actually execute the `~/bin/sleeptimer.sh` shell script. This can be put, for instance, in your dock. Rename it as will. (Make sure it is also `chmod 755` so that it runs on opening.)
 
 ### Set-up:
-Open **sleeptimer.sh** and make sure the options you want (mail or IFTTT) are set to `true`
+Open **sleeptimer.sh** and make sure the options you want (mail and/or IFTTT) are set to `true`.
 
 ### Mail: 
-This uses the mail command from terminal, you need to ensure your mail is set up correctly on your Mac. _(Remember your Day 0 of Piscine C, Chapter III exercise 0)._
+
+In the **sleeptimer.sh** script, set `USE_MAIL=true`.
+
+This uses the mail command from terminal.
+
+You need to ensure your mail is set up correctly on your Mac. _(Remember your Day 0 of Piscine C, Chapter III exercise 0)._
 
 ### IFTTT: 
 This uses "Webhooks" service [from IFTTT](https://ifttt.com/maker_webhooks). 
 
-You need to create an applet with the service. 
+In the **sleeptimer.sh** script, set `USE_IFTTT=true`.
 
-You need to get your unique key for the service. 
+You need to create an applet with the service. Using `value1` and `value2` as respectively title and body variable.
 
-This is left as an exercise for the reader (I'll come back and elaborate on this once I remember how exaclty one shall do it).
+You need to get your **unique key** for the Webhook service.
+
+You need to enter that key in the correct place in the script **sleeptimer.sh** (replace `ENTER_YOUR_IFTTT_WEBHOOK_KEY` by your key). 
+
+*Doing the whole IFTTT set-up stuff is left as an exercise for the reader (I'll come back and elaborate on this once I remember how exactly one shall do it).*
+
+NB: You don't need to do all this if you set `USE_IFTTT=false`.
 
 ## DISCLAIMER
 This is a really crude and horrendous script, I wrote it during my *Piscine c* because I was too stupid to watch time during my breaks, breaks I was spending drining too much coffee, trying to understand the basics of c and discussing with many various and interesting fellows piscineux. 
@@ -69,3 +90,8 @@ This is a really crude and horrendous script, I wrote it during my *Piscine c* b
 Not enough sleep, no idea of what I was doing, but at least I had my computer do some work for me. 
 
 **Use at your own risk**, and don't complain if you came back too late on tuesday at 11am during another piscine and the E1 was so full that somebody jumped at your PC as soon as the login screen appeared.
+
+## TO DO
+* Clean up the code so that the variables can be changed depending on one's IFTTT applet specifics.
+* Update **readme.md** to add instructions to create applet proper.
+* Find how to link /rebind a key shortcut natively (not using any plugin) so that one may juste use `ctrl`+`shift`+`eject` to start the script.
