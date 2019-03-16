@@ -2,7 +2,10 @@
 ## Useful really for *42born2code* only, hey. 
 ## Fires a terminal shell timer, which sleeps the Mac and pings you (with IFTTT or mail) before you lose your spot.
 
-### Problem: 
+## TL;DR
+Go for a break ? Start the script: conputer goes to display sleep and sends you time notifications.
+
+### The Problem: 
 Sessions on a Mac at 42 accept a stand-by time of 42 minutes before one gets automatically disconnnected. 
 
 This should not be a problem in terms of work in progress, as you duely commits all your work in progress with Git every now and then. So you are safe, you lose no code. Good. *(You DO commit your work right ? Good.)*
@@ -11,7 +14,7 @@ But when the seats are scarce and many students compete for Macs to get work don
 
 No work lost obviously (you commit, right ? *Right ?*), but, fair is fair, someone has pushed your stuff aside and is now working at what was your Mac, sitting on what was your chair.
 
-### Solution:
+### One Solution:
 A gentle reminder that tells you that time flies and pings you every so often to tell you how much time remains, then alerts you when it is time to come back and get back to work.
 
 It pings you in two ways: 
