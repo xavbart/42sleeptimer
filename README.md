@@ -3,7 +3,7 @@
 ## Fires a terminal shell timer, which sleeps the Mac and pings you (with IFTTT or mail) before you lose your spot.
 
 ## TL;DR
-Go for a break ? Start the script: conputer goes to display sleep and sends you time notifications.
+Go for a break ? Start the script: computer goes to 'display sleep' and will send you timely notifications.
 
 ### The Problem: 
 Sessions on a Mac at 42 accept a stand-by time of 42 minutes before one gets automatically disconnnected. 
