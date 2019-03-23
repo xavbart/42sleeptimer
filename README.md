@@ -49,11 +49,11 @@ You can either run it as a `.command` file by clicking it, or as a `.sh` shell s
 
 ### Installing and running
 
-Download the files. **Or, better, clone it, branch it, improve it and submit a Pull Request to give back!**
+Download it. **Or, better, clone or branch it, improve it and submit a Pull Request to give back!**
 
 Drop the **sleeptimer.sh** file in your `~/bin` folder, `chmod 755` the script so that you can run it directly. 
 
-*You may want to add this `~/bin` folder to your shell ENV: do so by adding "`export PATH=$PATH:$HOME/bin`" to your `.[|z|k|c]shrc` file.*
+*You may want to add this `~/bin` folder to your shell "ENV": do so by adding "`export PATH=$PATH:$HOME/bin`" to your `.[|z|k|c]shrc` file.*
 
 *Restart terminal so the new scripts gets parsed, or type `reset` (it reloads the .rc file). Then you may
 run it by typing 'sleeptimer.sh' at anytime in your terminal*
